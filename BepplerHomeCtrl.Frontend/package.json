@@ -1,0 +1,19 @@
+{
+  "name": "beppler-home-ctrl",
+  "version": "1.0.0",
+  "description": "Controle doméstico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abeppler/BepplerHomeCtrl.git"
+  },
+  "author": "Anderson Beppler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abeppler/BepplerHomeCtrl/issues"
+  },
+  "homepage": "https://github.com/abeppler/BepplerHomeCtrl#readme"
+}
