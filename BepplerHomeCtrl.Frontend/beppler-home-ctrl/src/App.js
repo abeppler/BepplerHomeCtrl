@@ -6,6 +6,21 @@ import 'admin-lte/bootstrap/css/bootstrap.min.css';
 import 'admin-lte/dist/css/AdminLTE.min.css'
 
 class App extends Component {
+
+  constructor() {
+    super()
+
+    this.state = {
+      valor: 'valor inicial'
+    }
+  }
+
+  save = (event) => {
+    this.setState({
+      valor: event.target.value
+    })
+  }
+
   render() {
     return (
       <div> 
@@ -24,12 +39,17 @@ class App extends Component {
               </div>
               <div className="box-body">
                 <div className="row">
-                  <div className="col-md-6">
-                    Eita col1
+                  <div className="col-md4">
+                    {this.state.valor}
                   </div>
-                  <div className="col-md-6">
-                    Eita col2
-                  </div>                  
+                </div>
+                <div className="row">
+                  <div className="col-md4">
+                    Campo:
+                  </div>
+                  <div className="col-md8">
+                    <input type="text" onChange={this.save}/>
+                  </div>
                 </div>
               </div>
               Hello AdminLTE World!
